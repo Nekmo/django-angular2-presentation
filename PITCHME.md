@@ -28,7 +28,7 @@ Sino sobre mis errores y experiencias
 
 Note:
 Y cómo aprendí conjuntar ambas tecnologías antes del deadline. Para esta presentación, se presupone que ya se cuenta 
-con conocimientos al menos de Django, aunque no hacen falta de Angular.
+con conocimientos al menos de Django, aunque no hace falta de Angular.
 
 
 ---
@@ -43,6 +43,33 @@ En esta presentación se va a ver:
 * Demo técnica
 * Paso a producción
 
+Note:
+En esta presentación vamos a ver (...) pero antes, vamos a hacer una pequeña presentación de Django y Angular
+
+
 ---
+@title[django]
+
+Django es un framework web de servidor en Python. Algunas características:
+
+* ORM propio
+* Administración
+* Middleware
+* Sistema de rutas
+* Lenguaje de plantillas
+* Controlador (llamadas vistas)
+
+
+---
+@title[angular]
+
+Angular es un framework web de cliente en JS/TypeScript. Algunas características:
+
+* Web Apps progresivas
+* Multiplataforma (web, escritorio, móvil...)
+* Optimización web (code splitting, Universal...)
+* Sistema de rutas
+* Lenguaje de plantillas
+* Controlador (llamados componentes)
 
 SystemJS ya no aparece en la documentación
