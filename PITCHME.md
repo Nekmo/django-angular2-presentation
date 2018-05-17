@@ -59,6 +59,8 @@ Django es un framework web de servidor en Python. Algunas características:
 * Lenguaje de plantillas
 * Controlador (llamadas vistas)
 
+Note:
+(...) ahora veamos Angular
 
 ---
 @title[angular]
@@ -74,6 +76,8 @@ Angular es un framework web de cliente en JS/TypeScript. Algunas característica
 
 SystemJS ya no aparece en la documentación
 
+Note:
+(...) y... controlador. Como vemos, ambos frameworks tienen varios elementos en común.
 
 ---
 @title[conflictos]
@@ -82,25 +86,149 @@ Elementos comunes entre ambos:
 
 <table>
   <tr>
-    <th>Firstname</th>
-    <th>Lastname</th>
-    <th>Age</th>
+    <th>Django</th>
+    <th>Angular</th>
   </tr>
   <tr>
-    <td>Jill</td>
-    <td>Smith</td>
-    <td>25</td>
+    <td>...</td>
+    <td>...</td>
   </tr>
-  <tr class="fragment">
-    <td>Eve</td>
-    <td>Jackson</td>
-    <td>94</td>
+  <tr>
+    <td>Sistema de rutas</td>
+    <td>Sistema de rutas</td>
   </tr>
-  <tr class="fragment">
-    <td>John</td>
-    <td>Doe</td>
-    <td>43</td>
+  <tr>
+    <td>Lenguaje de plantillas</td>
+    <td>Lenguaje de plantillas</td>
+  </tr>
+  <tr>
+    <td>Controladores</td>
+    <td>Controladores</td>
   </tr>
 </table>
 
 
+Note:
+Estos elementos son (...) ¿y ahora qué hacemos?
+
+
+---
+@title[clasico]
+
+### Método clásico
+
+Django se encarga de las rutas, las plantillas y los controladores (views).
+
+
+Note:
+Dejamos a Django encargarse de (...). Este método es muy popular en AngularJS, la primera versión de Angular.
+
+---
+@title[clasico-2]
+
+Usado por Djangular (AngularJS). Se incluye AngularJS en templates de Django a demanda.
+
+Este método puede usarse en Angular 2+ con SystemJS.
+
+
+Note:
+Es usado por ejemplo en Djangular, una biblioteca para AngularJS en Django. Ésta es la forma en que muchos 
+nos encontrábamos acostumbrados. Un método similar se encontraba documentado para Angular 4 mediante SystemJS.  
+
+
+---
+@title[clasico-3]
+
+```html
+...
+
+<!-- This SystemJS configuration loads umd packages from the web -->
+<script src="systemjs.config.server.js"></script>
+ 
+ <script>
+   System.import('main.js')
+         .catch(function(err){ console.error(err); });
+ </script>
+```
+
+Note:
+Aquí encontramos un ejemplo.
+
+
+---
+@title[clasico-4]
+
+Este método no es apropiado para Angular 2+:
+
+* Su configuración y uso es complicada
+* Requiere adaptación con cada módulo instalado
+* Se pierden las características de Angular CLI
+* Ya no se encuentra documentado
+
+Note:
+No obstante, este método puede ser frustrante si se está empezando con Angular, ya que (...). 
+Eso nos deja una segunda opción.
+
+
+---
+@title[cli]
+
+### Angular Cli
+
+Angular se encarga de las rutas, las plantillas y los controladores (componentes).
+
+
+Note:
+Con este método, Angular se encarga de (...). Angular Cli es el método recomendado para Angular.
+
+
+---
+@title[cli-2]
+
+### Características
+
+* Gestión de configuración y paquetes
+* Generar proyectos, componentes, servicios...
+* Comprobación de código, tests
+* Compilar (modos dev y prod.) y ejecución
+
+
+Note:
+Angular Cli tiene un montón de características interesantes. (...)
+
+
+---
+@title[cli-3]
+
+### Guía rápida
+
+1. Crear nuevo proyecto: `ng new my-app`
+2. Iniciar proyecto: `ng serve --open`
+3. ¡Listo!
+
+
+Note:
+Para crear un proyecto sólo tenemos que (...) e iniciamos el proyecto. Se compilará en tiempo real, se quedará 
+el servidor de Angular escuchando a cambios y se abrirá un navegador con el proyecto.
+
+---
+@title[api]
+
+### ¿Y dónde queda Django?
+
+Ahora tenemos 2 servidores ejecutándose en desarrollo:
+
+* `manage.py runserver` (Django) en el puerto 8000.
+* `ng serve` (Angular) en el puerto 4200.
+
+¿Cómo trabajar con ambas tecnologías a la vez?
+
+---
+@title[api-2]
+
+### Formas de conectar
+
+* Django Rest Framework
+* Django Channels
+* Graphene Django (GraphQL)
+* ... entre otros.
