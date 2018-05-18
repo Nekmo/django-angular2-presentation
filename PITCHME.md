@@ -147,7 +147,8 @@ nos encontrábamos acostumbrados. Un método similar se encontraba documentado p
 ```html
 ...
 
-<!-- This SystemJS configuration loads umd packages from the web -->
+<!-- This SystemJS configuration loads umd packages 
+     from the web -->
 <script src="systemjs.config.server.js"></script>
  
  <script>
@@ -304,10 +305,10 @@ el servidor de Angular.
 ---
 @title[proxy-2]
 
-+++?code=src/proxy.conf.json&lang=json&title=Source: proxy.conf.json
+---?code=src/proxy.conf.json&lang=json&title=Source: proxy.conf.json
 
 
 ---
 @title[proxy-3]
 
-+++?code=src/package.json&lang=json&title=Source: package.json
+---?code=src/package.json&lang=json&title=Source: package.json
