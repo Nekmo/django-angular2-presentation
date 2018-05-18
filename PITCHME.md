@@ -79,6 +79,11 @@ SystemJS ya no aparece en la documentación
 Note:
 (...) y... controlador. Como vemos, ambos frameworks tienen varios elementos en común.
 
+
+---
+
+TODO: diapositiva icono gracioso
+
 ---
 @title[conflictos]
 
@@ -211,6 +216,7 @@ Note:
 Para crear un proyecto sólo tenemos que (...) e iniciamos el proyecto. Se compilará en tiempo real, se quedará 
 el servidor de Angular escuchando a cambios y se abrirá un navegador con el proyecto.
 
+
 ---
 @title[api]
 
@@ -223,6 +229,11 @@ Ahora tenemos 2 servidores ejecutándose en desarrollo:
 
 ¿Cómo trabajar con ambas tecnologías a la vez?
 
+
+Note:
+Si antes sólo teníamos que ejecutar el servidor de Django, ahora también tenemos que tener en ejecución el de 
+Angular mientras desarrollamos. ¿Pero cómo conectamos ambas tecnologías?
+
 ---
 @title[api-2]
 
@@ -232,3 +243,71 @@ Ahora tenemos 2 servidores ejecutándose en desarrollo:
 * Django Channels
 * Graphene Django (GraphQL)
 * ... entre otros.
+
+
+Note:
+Django incluye varias bibiotecas para API, entre las que destacamos (...)
+
+---
+@title[drf]
+
+### Django Rest Framework
+
+* API Web navegable
+* Potentes formas de serialización y autenticación
+* Muy personalizable y adaptable
+* Documentación automática
+* Gran soporte y comunidad
+
+
+Note:
+Django Rest Framework es la biblioteca más popular por la comunidad. Ofrece una API REST, una 
+solución fácil de usar y con buen soporte. Entre sus características destacamos (...)
+
+
+---
+@title[api-rest-ejemplo]
+
+### Ejemplo
+
+```typescript
+export class HeroApiService {
+    constructor(private http: HttpClient) { }
+
+    // ...
+    getHero(id: number): Observable<Hero> {
+      const url = `/api/heroes/${id}/`;
+      return this.http.get<Hero>(url).pipe(
+        tap(_ => this.log(`fetched hero id=${id}`)),
+        catchError(this.handleError<Hero>(`getHero id=${id}`))
+      );
+    }
+}
+```
+
+Note:
+Aquí podemos ver un ejemplo basado en el tutorial de Angular, de cómo obtener un objeto
+Hero desde la API de Django. El código está en TypeScript, el lenguaje recomendado para 
+Angular.
+
+
+---
+@title[proxy-1]
+
+### Conectar cliente Angular a Django
+
+El navegador ejecuta `http://localhost:4200`, pero la API de Django se encuentra accesible 
+en `http://localhost:8000`. Para conectarlos de forma transparente, podemos usar proxies en 
+el servidor de Angular.
+
+
+---
+@title[proxy-2]
+
++++?code=src/proxy.conf.json&lang=json&title=Source: proxy.conf.json
+
+
+---
+@title[proxy-3]
+
++++?code=src/package.json&lang=json&title=Source: package.json
