@@ -50,7 +50,7 @@ En esta presentación vamos a ver (...) pero antes, vamos a hacer una pequeña p
 ---
 @title[django]
 
-#### **Django** es un **framework web** de servidor en **Python**. Algunas características:
+### **Django** es un **framework web** de servidor en **Python**. Algunas características:
 
 * **ORM** propio
 * **Administración**
@@ -65,7 +65,7 @@ Note:
 ---
 @title[angular]
 
-#### **Angular** es un **framework web** de cliente en **JS/TypeScript**. Algunas características:
+### **Angular** es un **framework web** de cliente en **JS/TypeScript**. Algunas características:
 
 * Web Apps **progresivas**
 * **Multiplataforma** (web, escritorio, móvil...)
@@ -163,7 +163,7 @@ Aquí encontramos un ejemplo.
 ---
 @title[clasico-4]
 
-#### No apropiado** para Angular 2+
+### No apropiado para Angular 2+
 
 * Su **configuración** y uso es **complicada**
 * Requiere **adaptación** con cada módulo instalado
