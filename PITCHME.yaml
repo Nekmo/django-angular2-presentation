@@ -1,9 +1,4 @@
-#
-# GitPitch Slideshow Custom Settings
-#
-# For details, visit Wiki:
-# https://github.com/gitpitch/gitpitch/wiki/Slideshow-Settings
-#
+
 theme : beige
 theme-override : assets/css/PITCHME.css
 logo : assets/image/logo.png
@@ -12,4 +7,4 @@ background-size : cover
 highlight : atom-one-dark
 transition : none
 published : true
-footnote : "GitPitch Pro [ Envelope ] Presentation Template"
+footnote : "Presentación Django Angular2"
