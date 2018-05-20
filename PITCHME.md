@@ -423,4 +423,40 @@ en mi caso me he decantado por la segunda.
 
 Note:
 Esta opción mediante Django es tan buena como cualquier otra. Hay una caché para hacerlo más 
-eficiente.
+eficiente. Y con esto, ya está todo para tener Angular con Django en producción.
+
+
+---
+@title[muchas-gracias]
+
+### ¡Muchas gracias por venir!
+
+Referencias:
+
+* [https://angular.io/docs](Angular Docs)
+* [https://github.com/angular/angular-cli/blob/master/docs/documentation/stories/proxy.md](Angular-cli proxy)
+* [https://github.com/angular/angular-cli/wiki/build](Angular-cli build)
+* [https://www.techiediaries.com/django-angular-cli/](Building Modern Web Apps with Python)
+
+
+---
+@title[presentación]
+
+### ¿Y la presentación?
+
+* Presentación: [https://github.com/Nekmo/django-angular2-presentation](github:Nekmo/django-angular2-presentation)
+* Demo: [https://github.com/Nekmo/django-angular2-example](github:Nekmo/django-angular2-example)
+* Lib en desarrollo: [https://github.com/Nekmo/django-angular2-example](github:Nekmo/django-angular2)
+
+
+---
+@title[contactar]
+
+### Contactar
+
+* Email: [mailto:contacto@nekmo.com](contacto@nekmo.com)
+* Telegram: [https://t.me/nekmo](@nekmo)
+* Jabber: [xmpp://nekmo@nekmo.org](nekmo@nekmo.org)
+
+
+![Logo Hispasec](img/logo_HIS.png)
