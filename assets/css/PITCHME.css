@@ -60,6 +60,18 @@
     color: #e27b1f !important;
 }
 
+.reveal strong {
+    background: #89824A;
+}
+
+.reveal code:not(.hljs) {
+    color: #abb2bf;
+    border-radius: 10px;
+    opacity: 0.95;
+    background: #282c34;
+    display: inline-block;
+}
+
 #gp-logo img {
   max-height: 2em;
   max-width: none;
@@ -75,3 +87,12 @@
 
 .gp-download { margin-left: 10px; }
 
+
+
+.reveal table tr {
+    color: #E58537;
+}
+
+.reveal table tr:nth-child(2), .reveal table tr:first-child {
+    color: #333;
+}
