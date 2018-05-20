@@ -2,14 +2,14 @@
 ## Django y Angular 6 de la mano
 
 Note:
-Buenas, soy Juan José Oyagüe, en esta charla voy a contar mi experiencia usando Angular 6 junto con Django,
+Buenas, soy **Juan José Oyagüe**, en esta charla voy a contar mi experiencia usando **Angular 6 junto con Django**,
 
 ---
 @title[acerca-tec]
 ## Tecnologías previas
 
-* Django desde versión 1.1 (2009)
-* AngularJS desde versión 1.1 (2013)
+* **Django** desde *versión 1.1* (2009)
+* **AngularJS** desde *versión 1.1* (2013)
 
 Note:
 En mi caso, antes de usar Angular 4, tenía 8 años experiencia usando Django, y había estado usando AngularJS desde 
@@ -36,12 +36,12 @@ con conocimientos al menos de Django, aunque no hace falta de Angular.
 
 En esta presentación se va a ver:
 
-* Comparación entre Angular y Django
+* **Comparación** entre Angular y Django
 * Formas de utilizar Angular
-* Angular CLI
-* Conectando Angular y Django
-* Demo técnica
-* Paso a producción
+* Angular **CLI**
+* **Conectando** Angular y Django
+* **Demo** técnica
+* Paso a **producción**
 
 Note:
 En esta presentación vamos a ver (...) pero antes, vamos a hacer una pequeña presentación de Django y Angular
@@ -50,14 +50,14 @@ En esta presentación vamos a ver (...) pero antes, vamos a hacer una pequeña p
 ---
 @title[django]
 
-Django es un framework web de servidor en Python. Algunas características:
+**Django** es un **framework web** de servidor en **Python**. Algunas características:
 
-* ORM propio
-* Administración
-* Middleware
-* Sistema de rutas
-* Lenguaje de plantillas
-* Controlador (llamadas vistas)
+* **ORM** propio
+* **Administración**
+* **Middleware**
+* Sistema de **rutas**
+* Lenguaje de **plantillas**
+* **Controlador** (llamadas vistas)
 
 Note:
 (...) ahora veamos Angular
@@ -65,16 +65,15 @@ Note:
 ---
 @title[angular]
 
-Angular es un framework web de cliente en JS/TypeScript. Algunas características:
+**Angular** es un **framework web** de cliente en **JS/TypeScript**. Algunas características:
 
-* Web Apps progresivas
-* Multiplataforma (web, escritorio, móvil...)
-* Optimización web (code splitting, Universal...)
-* Sistema de rutas
-* Lenguaje de plantillas
-* Controlador (llamados componentes)
+* Web Apps **progresivas**
+* **Multiplataforma** (web, escritorio, móvil...)
+* **Optimización** web (code splitting, Universal...)
+* Sistema de **rutas**
+* Lenguaje de **plantillas**
+* **Controlador** (llamados componentes)
 
-SystemJS ya no aparece en la documentación
 
 Note:
 (...) y... controlador. Como vemos, ambos frameworks tienen varios elementos en común.
@@ -87,7 +86,7 @@ TODO: diapositiva icono gracioso
 ---
 @title[conflictos]
 
-Elementos comunes entre ambos:
+**Elementos comunes** entre ambos:
 
 <table>
   <tr>
@@ -122,7 +121,7 @@ Estos elementos son (...) ¿y ahora qué hacemos?
 
 ### Método clásico
 
-Django se encarga de las rutas, las plantillas y los controladores (views).
+**Django** se encarga de las **rutas, las plantillas y los controladores** (views).
 
 
 Note:
@@ -131,7 +130,7 @@ Dejamos a Django encargarse de (...). Este método es muy popular en AngularJS, 
 ---
 @title[clasico-2]
 
-Usado por Djangular (AngularJS). Se incluye AngularJS en templates de Django a demanda.
+Usado por **Djangular** (AngularJS). Se incluye AngularJS **en templates** de Django **a demanda**.
 
 Este método puede usarse en Angular 2+ con SystemJS.
 
@@ -164,12 +163,12 @@ Aquí encontramos un ejemplo.
 ---
 @title[clasico-4]
 
-Este método no es apropiado para Angular 2+:
+Este método **no es apropiado** para **Angular 2+**:
 
-* Su configuración y uso es complicada
-* Requiere adaptación con cada módulo instalado
-* Se pierden las características de Angular CLI
-* Ya no se encuentra documentado
+* Su **configuración** y uso es **complicada**
+* Requiere **adaptación** con cada módulo instalado
+* Se pierden las **características** de Angular CLI
+* Ya no se encuentra **documentado**
 
 Note:
 No obstante, este método puede ser frustrante si se está empezando con Angular, ya que (...). 
@@ -181,7 +180,7 @@ Eso nos deja una segunda opción.
 
 ### Angular Cli
 
-Angular se encarga de las rutas, las plantillas y los controladores (componentes).
+**Angular** se encarga de las **rutas, las plantillas y los controladores** (componentes).
 
 
 Note:
@@ -193,10 +192,10 @@ Con este método, Angular se encarga de (...). Angular Cli es el método recomen
 
 ### Características
 
-* Gestión de configuración y paquetes
-* Generar proyectos, componentes, servicios...
-* Comprobación de código, tests
-* Compilar (modos dev y prod.) y ejecución
+* Gestión de **configuración** y **paquetes**
+* **Generar** proyectos, componentes, servicios...
+* **Comprobación** de código, tests
+* **Compilar** (modos dev y prod.) y **ejecución**
 
 
 Note:
@@ -208,8 +207,8 @@ Angular Cli tiene un montón de características interesantes. (...)
 
 ### Guía rápida
 
-1. Crear nuevo proyecto: `ng new my-app`
-2. Iniciar proyecto: `ng serve --open`
+1. **Crear** nuevo proyecto: `ng new my-app`
+2. **Iniciar** proyecto: `ng serve --open`
 3. ¡Listo!
 
 
@@ -223,7 +222,7 @@ el servidor de Angular escuchando a cambios y se abrirá un navegador con el pro
 
 ### ¿Y dónde queda Django?
 
-Ahora tenemos 2 servidores ejecutándose en desarrollo:
+Ahora tenemos **2 servidores** ejecutándose en desarrollo:
 
 * `manage.py runserver` (Django) en el puerto 8000.
 * `ng serve` (Angular) en el puerto 4200.
@@ -240,9 +239,9 @@ Angular mientras desarrollamos. ¿Pero cómo conectamos ambas tecnologías?
 
 ### Formas de conectar
 
-* Django Rest Framework
-* Django Channels
-* Graphene Django (GraphQL)
+* **Django Rest Framework**
+* **Django Channels**
+* **Graphene Django** (GraphQL)
 * ... entre otros.
 
 
@@ -254,11 +253,11 @@ Django incluye varias bibiotecas para API, entre las que destacamos (...)
 
 ### Django Rest Framework
 
-* API Web navegable
-* Potentes formas de serialización y autenticación
-* Muy personalizable y adaptable
-* Documentación automática
-* Gran soporte y comunidad
+* **API Web** navegable
+* Potentes formas de **serialización y autenticación**
+* Muy **personalizable** y **adaptable**
+* **Documentación automática**
+* Gran **soporte y comunidad**
 
 
 Note:
@@ -300,9 +299,9 @@ Angular.
 
 ### Conectar cliente Angular a Django
 
-El navegador ejecuta `http://localhost:4200`, pero la API de Django se encuentra accesible 
-en `http://localhost:8000`. Para conectarlos de forma transparente, podemos usar proxies en 
-el servidor de Angular.
+El navegador ejecuta `http://localhost:4200`, pero la **API de Django** se encuentra accesible 
+en `http://localhost:8000`. Para conectarlos de forma transparente, podemos usar **proxies** en 
+el **servidor de Angular**.
 
 
 Note:
@@ -348,10 +347,10 @@ construida sobre el tutorial de Django Rest Framework.
 
 ### Paso a producción: Angular CLI
 
-* Optimiza y minifica dependencias y código
-* Compila TypeScript y Sass
-* Concatena y añade hash para caché
-* Entornos diferenciados: `dev` y `prod`
+* **Optimiza y minifica** dependencias y código
+* **Compila** TypeScript y Sass
+* **Concatena** y añade **hash** para caché
+* **Entornos** diferenciados: `dev` y `prod`
 
 
 ---
@@ -359,7 +358,7 @@ construida sobre el tutorial de Django Rest Framework.
 
 ### Comando build
 
-Para compilar para producción:
+Para **compilar** para **producción**:
 
 ```bash
 $ ng build --prod
@@ -395,8 +394,8 @@ que collectstatic se encargue de ponerlo en su sitio.
 
 Tenemos 2 opciones:
 
-1. Servirlo con Nginx
-2. Servirlo con Django
+1. Servirlo con **Nginx**
+2. Servirlo con **Django**
 
 
 Note:
@@ -431,9 +430,9 @@ Referencias:
 
 ### ¿Y la presentación?
 
-* Presentación: [github:Nekmo/django-angular2-presentation](https://github.com/Nekmo/django-angular2-presentation)
-* Demo: [github:Nekmo/django-angular2-example](https://github.com/Nekmo/django-angular2-example)
-* Lib en desarrollo: [github:Nekmo/django-angular2](https://github.com/Nekmo/django-angular2-example)
+* **Presentación**: [github:Nekmo/django-angular2-presentation](https://github.com/Nekmo/django-angular2-presentation)
+* **Demo**: [github:Nekmo/django-angular2-example](https://github.com/Nekmo/django-angular2-example)
+* **Lib** en desarrollo: [github:Nekmo/django-angular2](https://github.com/Nekmo/django-angular2-example)
 
 
 ---
@@ -441,9 +440,9 @@ Referencias:
 
 ### Contactar
 
-* Email: [contacto@nekmo.com](mailto:contacto@nekmo.com)
-* Telegram: [@nekmo](https://t.me/nekmo)
-* Jabber: [nekmo@nekmo.org](xmpp://nekmo@nekmo.org)
+* **Email**: [contacto@nekmo.com](mailto:contacto@nekmo.com)
+* **Telegram**: [@nekmo](https://t.me/nekmo)
+* **Jabber**: [nekmo@nekmo.org](xmpp://nekmo@nekmo.org)
 
 
 ![Logo Hispasec](assets/image/logo_HIS.png)
