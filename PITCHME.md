@@ -296,7 +296,7 @@ Angular.
 
 
 ---
-@title[proxy-1]
+@title[proxy]
 
 ### Conectar cliente Angular a Django
 
@@ -310,6 +310,7 @@ Aunque el cliente web que ejecuta Angular ya tiene una forma de conectarse a Dja
 navegadores bloquean conexiones entre diferentes sitios por seguridad. Para solucionarlo, 
 haremos que la API de Django sea accesible desde el servidor de Angular
 
+
 ---
 @title[proxy-2]
 
@@ -321,11 +322,105 @@ Note:
 Creamos un archivo de configuración llamado `proxy.conf.json`, donde mapeamos un path con la 
 dirección a la que debe conectarse.
 
+
 ---
 @title[proxy-3]
 
 ?code=src/angular.json&lang=json&title=Usar config. proxy
+@[7](Configuración proxy)
+
 
 Note:
 Y para que use este archivo de configuración al ejecutar `ng serve`, editamos el fichero 
 `angular.json`.
+
+
+---
+@title[ejemplo]
+
+
+## Ahora veámoslo en acción
+
+[https://github.com/Nekmo/django-angular2-example](Github:nekmo/django-angular2-example)
+
+Note:
+He preparado una demo para demostrar el funcionamiento de Angular junto Django. Esta demo 
+construida sobre el tutorial de Django Rest Framework.
+
+
+---
+@title[producción]
+
+### Paso a producción: Angular CLI
+
+* Optimiza y minifica dependencias y código
+* Compila TypeScript y Sass
+* Concatena y añade hash para caché
+* Entornos diferenciados: `dev` y `prod`
+
+
+---
+@title[producción-2]
+
+### Comando build
+
+Para compilar para producción:
+
+```bash
+$ ng build --prod
+```
+
+Note:
+Este comando construye Angular para producción. El directorio de salida por defecto es la 
+carpeta dist, dentro del proyecto de Angular.
+
+
+---
+@title[producción-3]
+
+?code=src/index.html&lang=html&title=Archivo index generado
+
+
+Note:
+Se crea en el directorio los archivos javascript compilados junto con todo lo necesario para 
+ejecutar el proyecto en producción. Se genera también un index.html, que es el que se sirve.
+
+---
+@title[producción-4]
+
+?code=src/angular-2.json&lang=json&title=Directorio de salida
+@[6](Directorio de salida)
+
+
+Note:
+No obstante, el directorio de salida por defecto no nos hace fácil servirlo en producción. Es 
+posible cambiar este directorio para que escriba a un directorio de static de Django, y luego 
+que collectstatic se encargue de ponerlo en su sitio.
+
+
+---
+@title[producción-5]
+
+### Servir index.html con Django
+
+Tenemos 2 opciones:
+
+1. Servirlo con Nginx
+2. Servirlo con Django
+
+
+Note:
+Hay varias formas para servir el index.html generado. No obstante, propongo 2: (...). Pero 
+en mi caso me he decantado por la segunda.
+
+---
+@title[producción-6]
+
+
+?code=src/views.py&lang=python&title=Servirlo con Django
+@[10-12](View para servir el index)
+
+
+Note:
+Esta opción mediante Django es tan buena como cualquier otra. Hay una caché para hacerlo más 
+eficiente.
