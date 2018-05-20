@@ -88,7 +88,7 @@
 
 .gp-download { margin-left: 10px; }
 
-.reveal h3 {
+.reveal h3 strong {
     font-weight: normal;
     color: #5E6971;
 }
