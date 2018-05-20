@@ -446,4 +446,4 @@ Referencias:
 * Jabber: [nekmo@nekmo.org](xmpp://nekmo@nekmo.org)
 
 
-![Logo Hispasec](img/logo_HIS.png)
+![Logo Hispasec](assets/image/logo_HIS.png)
