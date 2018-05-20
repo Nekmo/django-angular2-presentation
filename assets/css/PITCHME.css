@@ -88,10 +88,13 @@
 
 .gp-download { margin-left: 10px; }
 
-
+.reveal h3 {
+    font-weight: normal;
+    color: #5E6971;
+}
 
 .reveal table tr {
-    color: #ff6600;
+    color: #e27b1f;
 }
 
 .reveal table tr:nth-child(2), .reveal table tr:first-child {

@@ -86,7 +86,7 @@ TODO: diapositiva icono gracioso
 ---
 @title[conflictos]
 
-**Elementos comunes** entre ambos:
+### Elementos **comunes** entre ambos
 
 <table>
   <tr>
