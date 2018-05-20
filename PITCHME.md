@@ -132,7 +132,7 @@ Dejamos a Django encargarse de (...). Este método es muy popular en AngularJS, 
 
 Usado por **Djangular** (AngularJS). Se incluye AngularJS **en templates** de Django **a demanda**.
 
-Este método puede usarse en Angular 2+ con SystemJS.
+*Este método puede usarse en **Angular 2+** con **SystemJS**.*
 
 
 Note:
@@ -227,7 +227,7 @@ Ahora tenemos **2 servidores** ejecutándose en desarrollo:
 * `manage.py runserver` (Django) en el puerto 8000.
 * `ng serve` (Angular) en el puerto 4200.
 
-¿Cómo trabajar con ambas tecnologías a la vez?
+*¿Cómo trabajar con ambas tecnologías a la vez?*
 
 
 Note:
@@ -299,9 +299,10 @@ Angular.
 
 ### Conectar cliente Angular a Django
 
-El navegador ejecuta `http://localhost:4200`, pero la **API de Django** se encuentra accesible 
-en `http://localhost:8000`. Para conectarlos de forma transparente, podemos usar **proxies** en 
-el **servidor de Angular**.
+* El navegador ejecuta `http://localhost:4200`
+* ... pero la **API de Django** se encuentra accesible en `http://localhost:8000`.
+
+Para conectarlos de forma transparente, podemos usar **proxies** en el **servidor de Angular**.
 
 
 Note:

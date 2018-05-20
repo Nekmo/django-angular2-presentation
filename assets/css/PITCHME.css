@@ -61,7 +61,7 @@
 }
 
 .reveal strong {
-    background: #89824A;
+    color: #89824A;
 }
 
 .reveal code:not(.hljs) {
@@ -70,6 +70,7 @@
     opacity: 0.95;
     background: #282c34;
     display: inline-block;
+    padding: 0 10px;
 }
 
 #gp-logo img {
@@ -90,7 +91,7 @@
 
 
 .reveal table tr {
-    color: #E58537;
+    color: #ff6600;
 }
 
 .reveal table tr:nth-child(2), .reveal table tr:first-child {
