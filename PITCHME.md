@@ -314,7 +314,7 @@ haremos que la API de Django sea accesible desde el servidor de Angular
 ---
 @title[proxy-2]
 
-?code=src/proxy.conf.json&lang=json&title=Proxy de Angular a Django
+---?code=src/proxy.conf.json&lang=json&title=Proxy de Angular a Django
 @[3](Proxy a la API de Django)
 
 
@@ -326,7 +326,7 @@ dirección a la que debe conectarse.
 ---
 @title[proxy-3]
 
-?code=src/angular.json&lang=json&title=Usar config. proxy
+---?code=src/angular.json&lang=json&title=Usar config. proxy
 @[7](Configuración proxy)
 
 
@@ -341,7 +341,7 @@ Y para que use este archivo de configuración al ejecutar `ng serve`, editamos e
 
 ## Ahora veámoslo en acción
 
-[https://github.com/Nekmo/django-angular2-example](Github:nekmo/django-angular2-example)
+[Github:nekmo/django-angular2-example](https://github.com/Nekmo/django-angular2-example)
 
 Note:
 He preparado una demo para demostrar el funcionamiento de Angular junto Django. Esta demo 
@@ -378,7 +378,7 @@ carpeta dist, dentro del proyecto de Angular.
 ---
 @title[producción-3]
 
-?code=src/index.html&lang=html&title=Archivo index generado
+---?code=src/index.html&lang=html&title=Archivo index generado
 
 
 Note:
@@ -388,7 +388,7 @@ ejecutar el proyecto en producción. Se genera también un index.html, que es el
 ---
 @title[producción-4]
 
-?code=src/angular-2.json&lang=json&title=Directorio de salida
+---?code=src/angular-2.json&lang=json&title=Directorio de salida
 @[6](Directorio de salida)
 
 
@@ -417,7 +417,7 @@ en mi caso me he decantado por la segunda.
 @title[producción-6]
 
 
-?code=src/views.py&lang=python&title=Servirlo con Django
+---?code=src/views.py&lang=python&title=Servirlo con Django
 @[10-12](View para servir el index)
 
 
@@ -433,10 +433,10 @@ eficiente. Y con esto, ya está todo para tener Angular con Django en producció
 
 Referencias:
 
-* [https://angular.io/docs](Angular Docs)
-* [https://github.com/angular/angular-cli/blob/master/docs/documentation/stories/proxy.md](Angular-cli proxy)
-* [https://github.com/angular/angular-cli/wiki/build](Angular-cli build)
-* [https://www.techiediaries.com/django-angular-cli/](Building Modern Web Apps with Python)
+* [Angular Docs](https://angular.io/docs)
+* [Angular-cli proxy](https://github.com/angular/angular-cli/blob/master/docs/documentation/stories/proxy.md)
+* [Angular-cli build](https://github.com/angular/angular-cli/wiki/build)
+* [Building Modern Web Apps with Python](https://www.techiediaries.com/django-angular-cli/)
 
 
 ---
@@ -444,9 +444,9 @@ Referencias:
 
 ### ¿Y la presentación?
 
-* Presentación: [https://github.com/Nekmo/django-angular2-presentation](github:Nekmo/django-angular2-presentation)
-* Demo: [https://github.com/Nekmo/django-angular2-example](github:Nekmo/django-angular2-example)
-* Lib en desarrollo: [https://github.com/Nekmo/django-angular2-example](github:Nekmo/django-angular2)
+* Presentación: [github:Nekmo/django-angular2-presentation](https://github.com/Nekmo/django-angular2-presentation)
+* Demo: [github:Nekmo/django-angular2-example](https://github.com/Nekmo/django-angular2-example)
+* Lib en desarrollo: [github:Nekmo/django-angular2](https://github.com/Nekmo/django-angular2-example)
 
 
 ---
@@ -454,9 +454,9 @@ Referencias:
 
 ### Contactar
 
-* Email: [mailto:contacto@nekmo.com](contacto@nekmo.com)
-* Telegram: [https://t.me/nekmo](@nekmo)
-* Jabber: [xmpp://nekmo@nekmo.org](nekmo@nekmo.org)
+* Email: [contacto@nekmo.com](mailto:contacto@nekmo.com)
+* Telegram: [@nekmo](https://t.me/nekmo)
+* Jabber: [nekmo@nekmo.org](xmpp://nekmo@nekmo.org)
 
 
 ![Logo Hispasec](img/logo_HIS.png)
