@@ -311,10 +311,8 @@ navegadores bloquean conexiones entre diferentes sitios por seguridad. Para solu
 haremos que la API de Django sea accesible desde el servidor de Angular
 
 
----
-@title[proxy-2]
-
 ---?code=src/proxy.conf.json&lang=json&title=Proxy de Angular a Django
+
 @[3](Proxy a la API de Django)
 
 
@@ -322,9 +320,6 @@ Note:
 Creamos un archivo de configuración llamado `proxy.conf.json`, donde mapeamos un path con la 
 dirección a la que debe conectarse.
 
-
----
-@title[proxy-3]
 
 ---?code=src/angular.json&lang=json&title=Usar config. proxy
 @[7](Configuración proxy)
@@ -375,9 +370,6 @@ Este comando construye Angular para producción. El directorio de salida por def
 carpeta dist, dentro del proyecto de Angular.
 
 
----
-@title[producción-3]
-
 ---?code=src/index.html&lang=html&title=Archivo index generado
 
 
@@ -385,8 +377,6 @@ Note:
 Se crea en el directorio los archivos javascript compilados junto con todo lo necesario para 
 ejecutar el proyecto en producción. Se genera también un index.html, que es el que se sirve.
 
----
-@title[producción-4]
 
 ---?code=src/angular-2.json&lang=json&title=Directorio de salida
 @[6](Directorio de salida)
@@ -412,9 +402,6 @@ Tenemos 2 opciones:
 Note:
 Hay varias formas para servir el index.html generado. No obstante, propongo 2: (...). Pero 
 en mi caso me he decantado por la segunda.
-
----
-@title[producción-6]
 
 
 ---?code=src/views.py&lang=python&title=Servirlo con Django
