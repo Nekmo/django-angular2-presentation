@@ -1,5 +1,5 @@
 @title[Introducción]
-## Django y Angular 6 de la mano
+# Django y Angular 6 de la mano
 
 Note:
 Buenas, soy **Juan José Oyagüe**, en esta charla voy a contar mi experiencia usando **Angular 6 junto con Django**,
@@ -34,7 +34,7 @@ con conocimientos al menos de Django, aunque no hace falta de Angular.
 ---
 @title[contenido]
 
-En esta presentación se va a ver:
+## En esta presentación:
 
 * **Comparación** entre Angular y Django
 * Formas de utilizar Angular
@@ -50,7 +50,7 @@ En esta presentación vamos a ver (...) pero antes, vamos a hacer una pequeña p
 ---
 @title[django]
 
-**Django** es un **framework web** de servidor en **Python**. Algunas características:
+#### **Django** es un **framework web** de servidor en **Python**. Algunas características:
 
 * **ORM** propio
 * **Administración**
@@ -65,7 +65,7 @@ Note:
 ---
 @title[angular]
 
-**Angular** es un **framework web** de cliente en **JS/TypeScript**. Algunas características:
+#### **Angular** es un **framework web** de cliente en **JS/TypeScript**. Algunas características:
 
 * Web Apps **progresivas**
 * **Multiplataforma** (web, escritorio, móvil...)
@@ -163,7 +163,7 @@ Aquí encontramos un ejemplo.
 ---
 @title[clasico-4]
 
-Este método **no es apropiado** para **Angular 2+**:
+#### No apropiado** para Angular 2+
 
 * Su **configuración** y uso es **complicada**
 * Requiere **adaptación** con cada módulo instalado
@@ -431,9 +431,9 @@ Referencias:
 
 ### ¿Y la presentación?
 
-* **Presentación**: [github:Nekmo/django-angular2-presentation](https://github.com/Nekmo/django-angular2-presentation)
-* **Demo**: [github:Nekmo/django-angular2-example](https://github.com/Nekmo/django-angular2-example)
-* **Lib** en desarrollo: [github:Nekmo/django-angular2](https://github.com/Nekmo/django-angular2-example)
+* Presentación: [github:Nekmo/django-angular2-presentation](https://github.com/Nekmo/django-angular2-presentation)
+* Demo: [github:Nekmo/django-angular2-example](https://github.com/Nekmo/django-angular2-example)
+* Lib en desarrollo: [github:Nekmo/django-angular2](https://github.com/Nekmo/django-angular2-example)
 
 
 ---
@@ -441,9 +441,9 @@ Referencias:
 
 ### Contactar
 
-* **Email**: [contacto@nekmo.com](mailto:contacto@nekmo.com)
-* **Telegram**: [@nekmo](https://t.me/nekmo)
-* **Jabber**: [nekmo@nekmo.org](xmpp://nekmo@nekmo.org)
+* Email: [contacto@nekmo.com](mailto:contacto@nekmo.com)
+* Telegram: [@nekmo](https://t.me/nekmo)
+* Jabber: [nekmo@nekmo.org](xmpp://nekmo@nekmo.org)
 
 
 ![Logo Hispasec](assets/image/logo_HIS.png)
