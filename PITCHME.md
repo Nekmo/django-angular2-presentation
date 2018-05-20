@@ -286,6 +286,9 @@ export class HeroApiService {
 }
 ```
 
+@[7-10](Conexión a la API de Django usando HttpClient.)
+
+
 Note:
 Aquí podemos ver un ejemplo basado en el tutorial de Angular, de cómo obtener un objeto
 Hero desde la API de Django. El código está en TypeScript, el lenguaje recomendado para 
@@ -302,13 +305,27 @@ en `http://localhost:8000`. Para conectarlos de forma transparente, podemos usar
 el servidor de Angular.
 
 
+Note:
+Aunque el cliente web que ejecuta Angular ya tiene una forma de conectarse a Django, los 
+navegadores bloquean conexiones entre diferentes sitios por seguridad. Para solucionarlo, 
+haremos que la API de Django sea accesible desde el servidor de Angular
+
 ---
 @title[proxy-2]
 
----?code=src/proxy.conf.json&lang=json&title=Source: proxy.conf.json
+?code=src/proxy.conf.json&lang=json&title=Proxy de Angular a Django
+@[3](Proxy a la API de Django)
 
+
+Note:
+Creamos un archivo de configuración llamado `proxy.conf.json`, donde mapeamos un path con la 
+dirección a la que debe conectarse.
 
 ---
 @title[proxy-3]
 
----?code=src/package.json&lang=json&title=Source: package.json
+?code=src/angular.json&lang=json&title=Usar config. proxy
+
+Note:
+Y para que use este archivo de configuración al ejecutar `ng serve`, editamos el fichero 
+`angular.json`.
