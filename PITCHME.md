@@ -84,9 +84,8 @@ Note:
 (...) y... controlador. Como vemos, ambos frameworks tienen varios elementos en común.
 
 
----
+---?image=assets/image/facepalm.webp&size=auto 50%
 
-![Facepalm](assets/image/facepalm.webp)
 
 ---
 @title[conflictos]
