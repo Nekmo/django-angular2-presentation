@@ -61,7 +61,8 @@
 }
 
 .reveal strong {
-    color: #89824A;
+    /* #C3002F, #159635 */
+    color: #1b8722;
 }
 
 .reveal code:not(.hljs) {
@@ -94,7 +95,7 @@
 }
 
 .reveal table tr {
-    color: #e27b1f;
+    color: #c3002f;
 }
 
 .reveal table tr:nth-child(2), .reveal table tr:first-child {

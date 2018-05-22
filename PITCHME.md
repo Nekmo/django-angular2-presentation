@@ -19,16 +19,21 @@ hace 5, por lo que el cambio de tecnología fue algo difícil. Tuve que cambiar 
 @title[requerido-django]
 
 
+![Cambio](assets/image/cambio.gif)
+
+
 Note:
 Así que esta presentación no va a ir sobre cómo volverse un profesional de Angular y Django en tan sólo 45 minutos... 
-Sino sobre mis errores y experiencias
+Sino sobre mis errores y experiencias. Y cómo aprendí conjuntar ambas tecnologías antes del deadline
 
 ---
 @title[mis-errores]
 
+![Éxito](assets/image/exito.webp)
+
 Note:
-Y cómo aprendí conjuntar ambas tecnologías antes del deadline. Para esta presentación, se presupone que ya se cuenta 
-con conocimientos al menos de Django, aunque no hace falta de Angular.
+Para esta presentación, se presupone que ya se cuenta con conocimientos al menos de Django, 
+aunque no hace falta de Angular.
 
 
 ---
