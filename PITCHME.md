@@ -84,7 +84,7 @@ Note:
 (...) y... controlador. Como vemos, ambos frameworks tienen varios elementos en común.
 
 
----?image=assets/image/facepalm.webp&size=auto 50%
+---?image=assets/image/facepalm.webp&size=auto 70%&color=#83CB8B
 
 
 ---
@@ -182,7 +182,7 @@ Eso nos deja una segunda opción.
 ---
 @title[cli]
 
-### Angular Cli
+## Angular Cli
 
 **Angular** se encarga de las **rutas, las plantillas y los controladores** (componentes).
 
@@ -241,7 +241,7 @@ Angular mientras desarrollamos. ¿Pero cómo conectamos ambas tecnologías?
 ---
 @title[api-2]
 
-### Formas de conectar
+## Formas de conectar
 
 * **Django Rest Framework**
 * **Django Channels**
@@ -350,7 +350,7 @@ construida sobre el tutorial de Django Rest Framework.
 ---
 @title[producción]
 
-### Paso a producción: Angular CLI
+## Paso a producción: Angular CLI
 
 * **Optimiza y minifica** dependencias y código
 * **Compila** TypeScript y Sass
@@ -420,7 +420,7 @@ eficiente. Y con esto, ya está todo para tener Angular con Django en producció
 ---
 @title[muchas-gracias]
 
-### ¡Muchas gracias por venir!
+## ¡Muchas gracias por venir!
 
 Referencias:
 
@@ -433,7 +433,7 @@ Referencias:
 ---
 @title[presentación]
 
-### ¿Y la presentación?
+## ¿Y la presentación?
 
 * Presentación: [github:Nekmo/django-angular2-presentation](https://github.com/Nekmo/django-angular2-presentation)
 * Demo: [github:Nekmo/django-angular2-example](https://github.com/Nekmo/django-angular2-example)
@@ -443,7 +443,7 @@ Referencias:
 ---
 @title[contactar]
 
-### Contactar
+## Contactar
 
 * Email: [contacto@nekmo.com](mailto:contacto@nekmo.com)
 * Telegram: [@nekmo](https://t.me/nekmo)
