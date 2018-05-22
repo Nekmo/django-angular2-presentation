@@ -53,11 +53,11 @@
 }
 
 .reveal a {
-    color: #af5a08 !important;
+    color: #aa002b !important;
 }
 
 .reveal a:hover {
-    color: #e27b1f !important;
+    color: #C3002F !important;
 }
 
 .reveal strong {
@@ -91,7 +91,7 @@
 
 .reveal h3 strong {
     font-weight: normal;
-    color: #5E6971;
+    /*color: #5E6971;*/
 }
 
 .reveal table tr {

@@ -29,7 +29,7 @@ Sino sobre mis errores y experiencias. Y cómo aprendí conjuntar ambas tecnolog
 ---
 @title[mis-errores]
 
-![Éxito](assets/image/exito.webp)
+![Éxito](assets/image/exito.webp =800x)
 
 Note:
 Para esta presentación, se presupone que ya se cuenta con conocimientos al menos de Django, 
@@ -86,7 +86,7 @@ Note:
 
 ---
 
-TODO: diapositiva icono gracioso
+![Facepalm](assets/image/facepalm.webp)
 
 ---
 @title[conflictos]
