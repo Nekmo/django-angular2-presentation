@@ -13,13 +13,19 @@ Buenas, soy **Juan José Oyagüe**, en esta charla voy a contar mi experiencia u
 
 Note:
 En mi caso, antes de usar Angular 4, tenía 8 años experiencia usando Django, y había estado usando AngularJS desde 
-hace 5, por lo que el cambio de tecnología fue algo difícil. Tuve que cambiar mi forma de trabajar.
+hace 5, **por lo que el cambio de tecnología fue algo difícil. Tuve que cambiar mi forma de trabajar.**
 
 ---
-@title[requerido-django]
+@title[dificil]
 
 
 ![Cambio](assets/image/cambio.gif)
+
+
+---
+@title[experiencia-angular]
+
+## <span style="color: #FEFEFE">Django</span> + <span style="color: #dd0031">Angular</span>
 
 
 Note:
@@ -30,6 +36,13 @@ Sino sobre mis errores y experiencias. Y cómo aprendí conjuntar ambas tecnolog
 @title[mis-errores]
 
 ![Éxito](assets/image/exito.webp =800x)
+
+
+---
+@title[experiencia-django]
+
+
+![Cambio](assets/image/django-logo.png)
 
 Note:
 Para esta presentación, se presupone que ya se cuenta con conocimientos al menos de Django, 
