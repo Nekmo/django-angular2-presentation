@@ -450,7 +450,7 @@ Referencias:
 
 * Presentación: [github:Nekmo/django-angular2-presentation](https://github.com/Nekmo/django-angular2-presentation)
 * Demo: [github:Nekmo/django-angular2-example](https://github.com/Nekmo/django-angular2-example)
-* Lib en desarrollo: [github:Nekmo/django-angular2](https://github.com/Nekmo/django-angular2-example)
+* Lib en desarrollo: [github:Nekmo/angular2-django](https://github.com/Nekmo/angular2-django)
 
 
 ---
